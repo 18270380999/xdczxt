@@ -1,0 +1,19 @@
+#include <stdio.h>
+long main()
+{
+	long swap_add(long *xp,long *yp);
+	long sum;
+	long arg1=534;
+	long arg2=1057;
+	long arg3=swap_add(&arg1,&arg2);
+	long diff=arg1-arg2;
+	return sum*diff;
+}
+long swap_add(long *xp,long *yp)
+{
+	long x=*xp;
+	long y=*yp;
+	*xp=y;
+	*yp=x;
+	return x+y;
+}
